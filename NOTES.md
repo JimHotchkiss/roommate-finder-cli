@@ -47,4 +47,6 @@
   ~ url
      # These will be come attributes in my Room class (This is done now)
 
-* Begin to stub-out some of the #methods needed for the actual scrapping 
+* Begin to stub-out some of the #methods needed for the actual scrapping
+* Rewrote the #scrape_time method to be #rows
+* Now, going to write the #call method 
