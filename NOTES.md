@@ -75,4 +75,15 @@
       will reside.  
 
 * Now, the first thing I need is a table, if I want to save my data to a
-  database. 
+  database.
+* We redefined our #save method to #insert because we don't have a save
+  guard against duplication.  
+
+* Now that our database is setup, we want to populate our database from the
+  website we are scrapping from.  
+
+  !!! Ran into a problem with .new_from_db method.  However, things work
+      with those things committed out.  So, I'll return and figure it out.
+      Unable, with .new_from_db, to instantiate a new room with attributes.    
+
+      Video: @ 1:12
