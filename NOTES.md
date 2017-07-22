@@ -50,4 +50,18 @@
 * Begin to stub-out some of the #methods needed for the actual scrapping
 * Rewrote the #scrape_time method to be #rows
 * Now, going to write the #call method
-  ## So, pick it up tomorrow ~> @ 27:15ish ## 
+  ## So, pick it up tomorrow ~> @ 27:15ish ##
+
+* Okay, so I've got the scrapper working, pretty, well, now I want to:
+  # Room.create_from_hash
+* So, we've built both a .create_from_hash method and a .new_from_hash method.
+  These functionality of these methods are divided between two methods.
+  Namely, .create_from_hash instantiates and saves (adds to database).
+  Where .new_from_hash is responsible for all of the instances variables, or
+  attributes.  
+    ~ So, .create_from_hash both instantiates and saves
+    ~ Where, .new_from_hash just instantiates
+
+* So, now we are building out our #save method, and in order to do so, we need
+  to include a database
+* We are going to do this in the congif/environment with a constant called DB
