@@ -20,4 +20,20 @@ binding.pry
     puts "You're about to save #{self}"
   end 
 
+  def self.create_table
+    sql = <<-SQL 
+      CREATE TABLE IF NOT EXISTS rooms (
+        id INTEGER PRIMARY Key AUTOINCREMENT,
+        title TEXT,
+        date_created TEXT,
+        price TEXT,
+        url TEXT
+      )
+    SQL
+
+    DB[:connection].execute(sql)
+
+    
+  end 
+
 end 

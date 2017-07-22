@@ -65,3 +65,14 @@
 * So, now we are building out our #save method, and in order to do so, we need
   to include a database
 * We are going to do this in the congif/environment with a constant called DB
+* Built following hash:
+    DB = {
+      :connection => SQLite3::Database.new("db/rooms-development.sqlite")
+
+    }
+
+    # Which instantiates an object of SQLite3::Database, and where my Database
+      will reside.  
+
+* Now, the first thing I need is a table, if I want to save my data to a
+  database. 
