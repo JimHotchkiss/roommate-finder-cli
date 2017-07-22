@@ -22,15 +22,12 @@ class RoomScraper
   end
 
   def scrape_row(row)
-    #Scrape an indivual row.  Want to end up with a hash of attributes
+    Scrape an indivual row.  Want to end up with a hash of attributes
     {
-      :time =  row.search('time.result-date').text #row.search('time.result-date') => "Jul 21"
-      :title = row.search('a.result-title.hdrlnk').text
-      :price = row.search('span.result-price').text
-      :url = #I may not worry about url, for this code along.  
-
-
-
+      :date_created => row.search('time.result-date').text, #row.search('time.result-date') => "Jul 21"
+      :title => row.search('a.result-title.hdrlnk').text,
+      :price => row.search('span.result-price').text,
+      :url => row.search('a.result-title.hdrlnk').attribute('href').text #=> this works
     }
 
   end

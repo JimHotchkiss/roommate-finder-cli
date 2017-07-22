@@ -49,4 +49,5 @@
 
 * Begin to stub-out some of the #methods needed for the actual scrapping
 * Rewrote the #scrape_time method to be #rows
-* Now, going to write the #call method 
+* Now, going to write the #call method
+  ## So, pick it up tomorrow ~> @ 27:15ish ## 
